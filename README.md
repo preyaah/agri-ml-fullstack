@@ -31,36 +31,6 @@ AgriML is a **full-stack web application** that empowers farmers with AI-driven 
 | **Backend** | FastAPI, Python 3.8+ |
 | **Machine Learning** | TensorFlow/Keras, CNN, MobileNetV2 |
 | **Data Processing** | NumPy, Pandas, OpenCV |
-| **API Documentation** | Swagger UI (Auto-generated) |
-| **Deployment** | Docker, Uvicorn |
-
-## 📁 Project Structure
-
-```
-agri-ml-fullstack/
-├── backend/
-│   ├── app/
-│   │   ├── models/              # Trained ML models
-│   │   ├── routers/             # FastAPI route handlers
-│   │   ├── services/            # Business logic & ML inference
-│   │   ├── utils/               # Helper functions
-│   │   └── main.py              # FastAPI application entry point
-│   ├── notebooks/               # Model training & experimentation
-│   ├── data/                    # Dataset and preprocessing scripts
-│   └── requirements.txt         # Python dependencies
-├── frontend/
-│   ├── src/
-│   │   ├── components/          # React components
-│   │   ├── pages/               # Application pages
-│   │   ├── services/            # API integration
-│   │   ├── styles/              # CSS styling
-│   │   └── App.js               # Main React application
-│   ├── public/                  # Static assets
-│   └── package.json             # Node.js dependencies
-├── docker-compose.yml           # Container orchestration
-├── README.md                    # Project documentation
-└── .gitignore                   # Git ignore rules
-```
 
 ## 🚀 Quick Start
 
@@ -111,10 +81,6 @@ agri-ml-fullstack/
    npm start
    ```
 
-3. **Access the Application**
-   - **Web Application**: http://localhost:3000
-   - **API Documentation**: http://localhost:8000/docs
-   - **API Endpoints**: http://localhost:8000
 
 ## 🔬 Model Information
 
@@ -131,25 +97,7 @@ agri-ml-fullstack/
 - **Optimization**: Model quantization for faster inference
 - **Validation**: K-fold cross-validation and holdout testing
 
-## 📱 Usage
 
-### Web Interface
-1. Navigate to the dashboard
-2. Select the analysis type (Disease, Soil, or Pest)
-3. Upload an image of your crop/soil/pest
-4. Receive instant AI-powered recommendations
-5. View confidence scores and detailed insights
-
-### API Integration
-```python
-import requests
-
-# Example API call for disease detection
-url = "http://localhost:8000/api/v1/detect-disease"
-files = {"file": open("plant_image.jpg", "rb")}
-response = requests.post(url, files=files)
-result = response.json()
-```
 
 ## 🌟 Future Enhancements
 
@@ -160,39 +108,6 @@ result = response.json()
 - [ ] **Multi-language Support** - Localization for global farmers
 - [ ] **Offline Mode** - Edge computing capabilities
 
-## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📊 Performance & Deployment
-
-- **Response Time**: < 2 seconds for image processing
-- **Concurrent Users**: Supports 100+ simultaneous requests
-- **Docker Support**: Containerized for easy deployment
-- **Cloud Ready**: AWS, GCP, Azure compatible
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Preyaah** - *Full Stack Developer & ML Enthusiast*
-- GitHub: [@preyaah](https://github.com/preyaah)
-- LinkedIn: [Connect with me](https://linkedin.com/in/yourprofile)
-
-## 🙏 Acknowledgments
-
-- Agricultural domain experts for dataset validation
-- Open source community for frameworks and libraries
-- Farmers who provided real-world feedback during testing
-
----
 
 **Made with ❤️ for sustainable agriculture and smart farming practices**
