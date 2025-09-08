@@ -1,4 +1,4 @@
-# AgriML - AI Driven Precision Farming for Sustainable Agriculture
+# AgriML - AI Driven Precision Farming Platform
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-agri--ml--fullstack-blue?logo=github)](https://github.com/preyaah/agri-ml-fullstack)
 [![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react)](https://reactjs.org/)
